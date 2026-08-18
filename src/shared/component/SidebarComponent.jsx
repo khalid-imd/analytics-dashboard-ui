@@ -49,9 +49,9 @@ export default function AppSidebar() {
               </div>
 
               <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">My Application</span>
-
-                <span className="truncate text-xs">Analytics Dashboard</span>
+                <span className="truncate font-semibold">
+                  Analytics Dashboard
+                </span>
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>

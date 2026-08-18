@@ -11,9 +11,7 @@ function App() {
         <AppSidebar />
         <div className="flex min-h-screen flex-1 flex-col">
           <Navbar />
-          <main className="flex-1 p-6">
-            <h1 className="text-2xl font-bold">Dashboard</h1>
-          </main>
+          <main className="flex-1 p-6"></main>
         </div>
       </SidebarProvider>
     </div>
