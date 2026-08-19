@@ -31,9 +31,11 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { useNavigate } from "react-router-dom";
 
 export default function AppSidebar() {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   return (
     <Sidebar collapsible="icon">
@@ -103,14 +105,11 @@ export default function AppSidebar() {
                     <SidebarMenu>
                       {filteredItems.map((item) => {
                         const Icon = item.icon;
-
                         return (
                           <SidebarMenuItem key={item.title}>
                             <SidebarMenuButton
                               tooltip={item.title}
-                              onClick={() => {
-                                console.log("Navigate:", item.url);
-                              }}
+                              onClick={() => navigate(item.url)}
                             >
                               <Icon />
 

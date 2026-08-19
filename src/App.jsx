@@ -1,20 +1,22 @@
-import { SidebarProvider } from "./components/ui/sidebar";
-import Navbar from "./shared/component/Navbar";
-import AppSidebar from "./shared/component/SidebarComponent";
-import SidebarGesture from "./shared/component/SidebarGesture";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DashboardLayout from "./layout/DashboardLayout";
+import Dashboard from "./page/overview/Dashboard";
+import Traffic from "./page/analytics/Traffic";
+import Revenue from "./page/analytics/Revenue";
+import Conversion from "./page/analytics/Conversion";
 
 function App() {
   return (
-    <div>
-      <SidebarProvider>
-        <SidebarGesture />
-        <AppSidebar />
-        <div className="flex min-h-screen flex-1 flex-col">
-          <Navbar />
-          <main className="flex-1 p-6"></main>
-        </div>
-      </SidebarProvider>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DashboardLayout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/analytics/traffic" element={<Traffic />} />
+          <Route path="/analytics/revenue" element={<Revenue />} />
+          <Route path="/analytics/conversions" element={<Conversion />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
