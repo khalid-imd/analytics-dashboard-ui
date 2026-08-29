@@ -263,39 +263,6 @@ export default function Dashboard() {
       </div>
 
       {/* Recent activity table */}
-      {/* <Card >
-        <CardHeader>
-          <CardTitle>Aktivitas Terbaru</CardTitle>
-          <CardDescription>Aktivitas user 24 jam terakhir</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>User</TableHead>
-                <TableHead>Aksi</TableHead>
-                <TableHead>Waktu</TableHead>
-                <TableHead className="text-right">Nominal</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {RECENT_ACTIVITY.map((row) => (
-                <TableRow key={row.user + row.time}>
-                  <TableCell className="font-medium">{row.user}</TableCell>
-                  <TableCell className="text-muted-foreground">
-                    {row.action}
-                  </TableCell>
-                  <TableCell className="text-muted-foreground">
-                    {row.time}
-                  </TableCell>
-                  <TableCell className="text-right">{row.amount}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card> */}
-
       <Card className="w-full">
         <CardHeader className="px-4 sm:px-6">
           <CardTitle className="text-base sm:text-lg">
