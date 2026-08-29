@@ -6,6 +6,12 @@ import Revenue from "./page/analytics/Revenue";
 import Conversion from "./page/analytics/Conversion";
 
 function App() {
+  console.log(
+    "%cHIRE ME",
+    "color: #5865F2; font-size: 40px; font-weight: bold;",
+  );
+  console.log("%cmuhamadkhalid899@gmail.com", "color: #888; font-size: 16px;");
+
   return (
     <BrowserRouter>
       <Routes>
