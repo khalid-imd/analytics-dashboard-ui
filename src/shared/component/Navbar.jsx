@@ -93,18 +93,18 @@ export default function Navbar() {
 
         {/* Profile */}
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="ml-1 h-9 gap-2 px-2">
-              <Avatar className="size-7">
-                <AvatarFallback>U</AvatarFallback>
-              </Avatar>
+          <DropdownMenuTrigger className="ml-1 inline-flex h-9 items-center justify-center gap-2 rounded-md px-2 text-sm font-medium transition-colors hover:bg-[#E8EAEA] hover:text-[#E8EAEA]-foreground">
+            {/* <Button variant="ghost" className="ml-1 h-9 gap-2 px-2"> */}
+            <Avatar className="size-7">
+              <AvatarFallback>U</AvatarFallback>
+            </Avatar>
 
-              <div className="hidden text-left lg:block">
-                <p className="text-sm font-medium">User</p>
+            <div className="hidden text-left lg:block">
+              <p className="text-sm font-medium">User</p>
 
-                <p className="text-xs text-muted-foreground">Admin</p>
-              </div>
-            </Button>
+              <p className="text-xs text-muted-foreground">Admin</p>
+            </div>
+            {/* </Button> */}
           </DropdownMenuTrigger>
 
           <DropdownMenuContent align="end" className="w-48">
