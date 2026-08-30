@@ -171,7 +171,7 @@ const SIDEBAR_MENU = [
       {
         title: "Saved Reports",
         icon: FileText,
-        url: "/reports",
+        url: "/reports/saved-report",
       },
       {
         title: "Scheduled",
