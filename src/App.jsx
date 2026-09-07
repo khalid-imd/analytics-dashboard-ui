@@ -11,10 +11,13 @@ import Segments from "./page/data/Segments";
 
 function App() {
   console.log(
-    "%cLEST GET IN TOUCH",
+    "%cHIRE ME",
     "color: #5865F2; font-size: 40px; font-weight: bold;",
   );
-  console.log("%cmuhamadkhalid899@gmail.com", "color: #888; font-size: 16px;");
+  console.log(
+    "%chttps://www.linkedin.com/in/khalid-imaduddin/",
+    "color: #888; font-size: 16px;",
+  );
 
   return (
     <BrowserRouter>
